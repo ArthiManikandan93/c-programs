@@ -1,0 +1,20 @@
+
+#include <stdio.h>
+
+int main() {
+    int n,p,c;
+
+    scanf("%d %d %d",&n,&p,&c);
+    
+    if (n==p||p==c){
+        printf("Equilateral triangle");}
+    else if(n==p||p==c||c==n){
+        printf("isocelene triangle");
+    }
+  
+    
+    else {
+        printf("Not a valid triangle");
+}
+    return 0;
+}
