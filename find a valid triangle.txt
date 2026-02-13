@@ -1,0 +1,17 @@
+
+#include <stdio.h>
+
+int main() {
+    int n,p,c;
+
+    scanf("%d %d %d",&n,&p,&c);
+    
+    if (n+p+c==180){
+        printf("valid triangle");
+    
+    }
+    else{
+        printf("Not a valid triangle");
+}
+    return 0;
+}
