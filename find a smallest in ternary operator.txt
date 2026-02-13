@@ -1,0 +1,12 @@
+#include <stdio.h>
+
+int main() {
+    int n,m,smallest;
+    
+    scanf("%d %d",&n,&m);
+    smallest = (n<m) ? n:m;
+    printf("%d is smallest",smallest);
+    
+    return 0;
+}
+
