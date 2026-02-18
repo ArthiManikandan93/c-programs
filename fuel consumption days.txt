@@ -1,0 +1,25 @@
+#include<stdio.h>
+
+int main() {
+    int N;
+    int fuel;
+    int total = 0;
+    int highdays = 0;
+
+    scanf("%d", &N);
+
+    for(int i = 0; i < N; i++) {
+        scanf("%d", &fuel);
+
+        total = total + fuel;
+
+        if(fuel > 100) {
+          highdays++;
+        }
+    }
+
+    printf("Highest price: %d\n", total);
+    printf("High price  days: %d", highdays);
+
+    return 0;
+}
