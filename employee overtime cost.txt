@@ -1,0 +1,30 @@
+#include <stdio.h>
+
+int main() {
+    int N;
+    scanf("%d", &N);
+
+    int workingtime;
+    int totalworkingtime = 0;  
+    int overtimedays = 0;       
+    int overtimecost;
+
+    for(int i = 0; i < N; i++) {
+        scanf("%d", &workingtime);
+
+        totalworkingtime += workingtime;
+
+        if(workingtime > 3) {  
+            overtimedays++;    
+        }
+    }
+
+    overtimecost = totalworkingtime * 200;
+
+    printf("Total Overtime Hours: %d\n", totalworkingtime);
+    printf("Overtime Cost: %d\n", overtimecost);
+    printf("Heavy overtime days: %d\n", overtimedays);
+
+    return 0;
+}
+
