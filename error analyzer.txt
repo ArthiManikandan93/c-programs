@@ -1,0 +1,25 @@
+#include<stdio.h>
+
+int main() {
+    int N;
+    int server;
+    int total = 0;
+    int criticalhour = 0;
+
+    scanf("%d", &N);
+
+    for(int i = 0; i < N; i++) {
+        scanf("%d", &server);
+
+        total = total + server;
+
+        if(server > 50) {
+          criticalhour++;
+        }
+    }
+
+    printf("Total hour: %d\n", total);
+    printf("critical hour: %d", criticalhour);
+
+    return 0;
+}
