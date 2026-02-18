@@ -1,0 +1,22 @@
+// Online C compiler to run C program online
+#include <stdio.h>
+
+int main() {
+    int n;
+    scanf("%d",&n);
+    int amount;
+    int total=0;
+    
+    for(int i =0;i<n;i++){
+        scanf("%d",&amount);
+    }
+      if(total>10000){
+
+          printf("Limited Exceeds");  
+    }
+    else{
+
+    printf("Approved");
+}
+    return 0;
+}
