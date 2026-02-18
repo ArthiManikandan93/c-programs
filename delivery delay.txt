@@ -1,0 +1,24 @@
+#include <stdio.h>
+
+int main() {
+    int N;
+    scanf("%d", &N);
+
+    int deliverytime;
+    int deliverydelay = 0;   
+    int totaldelay = 0;
+
+    for(int i = 0; i < N; i++) {
+        scanf("%d", &deliverytime);
+
+        totaldelay = totaldelay + deliverytime;
+
+        if(deliverytime > 30) {  
+        deliverydelay++;          }
+    }
+
+    printf("Total Delay: %d\n", totaldelay);
+    printf("Delayed Deliveries: %d\n", deliverydelay);
+
+    return 0;
+}
